@@ -34,7 +34,8 @@ with c2:
             # 按bytes读取
             bytes_value = f.getvalue()
             # 读取 huggingface 中的 token
-            api_token = "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"
+           # api_token = "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"
+             api_token = "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"
             # API key
             headers = {"Authorization": f"Bearer {api_token}"}
             API_URL = ("https://api-inference.huggingface.co/models/facebook/wav2vec2-base-960h")
@@ -67,7 +68,3 @@ with c2:
             )
     else:
         st.stop()
-
-
-
-
